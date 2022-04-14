@@ -1,6 +1,6 @@
 # Tratamento de Erros
 
-Projeto referente ao curso "Tratamento de Erros" que estudei pela [Digital Innovation One](https://digitalinnovation.one/) com a Stephany Nusch
+Projeto referente ao curso "Tratamento de Erros" que estudei pela [Digital Innovation One](https://digitalinnovation.one/) com a [Stephany Nusch](https://github.com/stebsnusch).
 
 ## Atividade: validação de erros por tipo
 

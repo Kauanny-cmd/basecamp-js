@@ -1,0 +1,4 @@
+function getAdmins(map){
+    
+}
+

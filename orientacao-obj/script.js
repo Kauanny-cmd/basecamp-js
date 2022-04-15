@@ -44,3 +44,10 @@ class ContaCorrente{
         return this._cartaoCredito = valor;
     }
 }
+
+class ContaPoupanca{
+    constructor(agencia, num, saldo){
+        super(agencia, num, saldo);
+        this.tipo = 'poupança'
+    }
+}

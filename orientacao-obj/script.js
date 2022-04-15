@@ -20,12 +20,12 @@ class ContaBancaria{
         }
         this._saldo = this._saldo - valor;
 
-        return this._saldo;
+        return 'Saldo atual: ' + this._saldo;
     }
 
     depositar(valor){
         this._saldo = this._saldo + valor;
-        return this._saldo;
+        return 'Saldo atual: ' + this._saldo;
     }
 }
 
@@ -65,5 +65,7 @@ class ContaUniversitaria extends ContaBancaria{
             return "Valor inválido!"
         }
         this._saldo = this._saldo - valor;
+
+        return 'Saldo atual: ' + this._saldo;
     }
 }

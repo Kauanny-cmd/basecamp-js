@@ -33,6 +33,14 @@ class ContaCorrente{
     constructor(agencia, num, saldo, cartaoCredito){
         super(agencia, num, saldo);
         this.tipo = 'corrente'
-        this.cartaoCredito = cartaoCredito;
+        this._cartaoCredito = cartaoCredito;
+    }
+
+    get cartaoCredito(){
+        return this._cartaoCredito;
+    }
+
+    set cartaoCredito(valor){
+        return this._cartaoCredito = valor;
     }
 }

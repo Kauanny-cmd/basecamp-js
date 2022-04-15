@@ -51,3 +51,10 @@ class ContaPoupanca{
         this.tipo = 'poupança'
     }
 }
+
+class ContaUniversitaria{
+    constructor(agencia, num, saldo){
+        super(agencia, num, saldo);
+        this.tipo = 'universitaria'
+    }
+}

@@ -50,8 +50,6 @@ class ContaPoupanca extends ContaBancaria{
         super(agencia, num);
         this.tipo = 'poupança'
     }
-
-    
 }
 
 class ContaUniversitaria extends ContaBancaria{

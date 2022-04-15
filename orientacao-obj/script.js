@@ -14,5 +14,18 @@ class ContaBancaria{
         return this._saldo = valor;
     }
 
-    
+    sacar(valor){
+        if(valor > this._saldo){
+            return "Valor inválido"
+        }
+        this._saldo = this._saldo - valor;
+
+        return this._saldo;
+    }
+
+    depositar(valor){
+        this._saldo = this._saldo + valor;
+        return this._saldo;
+    }
+
 }

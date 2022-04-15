@@ -6,12 +6,12 @@ const banana = {
     preco: 3.00
 }
 
-function frutas(){
-    const quantidade = [1, 2, 3, 4]
-
-    return quantidade.map(function(item){
+function comThis(arr, thisArg){
+    return arr.map(function(item){
        return item * this.preco
-    }, uva)
+    }, thisArg)
 }
 
-console.log(frutas())
+const num = [1, 2, 3, 4]
+console.log('this - uva',comThis(num, uva))
+console.log('this - banana',comThis(num, banana))

@@ -27,5 +27,12 @@ class ContaBancaria{
         this._saldo = this._saldo + valor;
         return this._saldo;
     }
+}
 
+class ContaCorrente{
+    constructor(agencia, num, saldo, cartaoCredito){
+        super(agencia, num, saldo);
+        this.tipo = 'corrente'
+        this.cartaoCredito = cartaoCredito;
+    }
 }

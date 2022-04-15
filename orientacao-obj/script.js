@@ -50,6 +50,8 @@ class ContaPoupanca extends ContaBancaria{
         super(agencia, num);
         this.tipo = 'poupança'
     }
+
+    
 }
 
 class ContaUniversitaria extends ContaBancaria{
@@ -61,6 +63,8 @@ class ContaUniversitaria extends ContaBancaria{
     sacar(valor){
         if(valor > 500){
             return 'Valor inválido!'
+        } else if(valor > this._saldo){
+            return "Valor inválido!"
         }
         this._saldo = this._saldo - valor;
     }
